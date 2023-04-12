@@ -1,0 +1,27 @@
+.fondo-nav{background-color: gray;
+        top:0px;
+        height:13vh;
+        color:white;
+        font-size:1.2rem;
+         
+}
+
+
+.subra{list-style: none;}   
+
+ul li:hover{background-color:black;
+         border-radius:10px;
+         color:white;
+               
+} 
+
+.active{color: white!important;
+     background-color:black;
+     border-radius:10px;
+}
+
+
+
+
+
+
