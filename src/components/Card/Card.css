@@ -1,8 +1,17 @@
-.tarjeta{background-color:red;
+.tarjeta{background-size:cover;
+         background-image:url(../imagenes/fondo-cliente.png);
          border-radius:10px;
+         width: 400px;;
 }
 
-.color-name{color:black;}
+.imagen{
+        height:300px;  
+}
+
+.color-name{color:red;
+            list-style:none;
+            font-size:1.5rem;
+}
 
 /* .boton-show{background-color:white;
            border:0px;
@@ -10,7 +19,7 @@
            height: 35px;
 } */
 
-.ancho-tarjeta{width:500px;}
+/* .ancho-tarjeta{width:400px;}  */
 
 /* .cierre-menu{background-color:black;
              color:white;
@@ -21,13 +30,15 @@
 
 .lista-info{font-size:1.3rem;
             color:whitesmoke;
-            list-style: none;
+            list-style:none;
             padding:15px;   
+            font-weight:900;
 }  
             
 .lista-info:hover{background-color:white;
-                  color:#223142;
+                  color:black;
                   font-weight:900; 
 }  
 
-.resaltar{font-weight:900}
+ /* .resaltar{font-weight:900} */
+
