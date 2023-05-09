@@ -1,8 +1,9 @@
-.boton-home{background-color:BLACK;
-    color:WHITE;
+.boton-home{background-color:black;
+            color:WHITE;
+    
 } 
 
 .boton-home:hover{background-color:rgb(155, 93, 93);
-          color:black;
-         
+                  color:black;
+                  border-radius: 0.5rem;
 } 

@@ -4,10 +4,12 @@ import "./SectionCards.css";
 
 export default function SectionCards ({datos}){
 
-   return (
+  return (
      <section className="section-cards">
            {datos.map((dato)=>{return <Card key={datos.indexOf(dato)} info={dato}/>})}
+           
      </section>
+     
    )
-
+ 
 }

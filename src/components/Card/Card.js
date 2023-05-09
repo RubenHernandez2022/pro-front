@@ -20,11 +20,11 @@ export default function Card({info}) {
                
                 <ul >     
                  <li className="color-name">Tipo Producto</li>
-                 <li className="lista-info resaltar">{info.TipoProd}</li>
+                 <li className="lista-info ">{info.tipoProducto}</li>
                  <li className="color-name">Producto</li>
-                 <li className="lista-info resaltar">{info.Producto}</li>
+                 <li className="lista-info ">{info.Producto}</li>
                  <li className="color-name">Marca</li>
-                 <li className="lista-info resaltar">{info.Marca}</li>
+                 <li className="lista-info">{info.Marca}</li>
                 </ul>
                
           

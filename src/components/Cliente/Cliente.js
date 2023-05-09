@@ -10,22 +10,21 @@ import{Fragment} from "react"
 export default function Cliente () {
     
   let [datos,setDatos]=useState([]);
-  const traerInfo=async()=>{
+  const mostrarInfo=async()=>{
           // metodo que es una promesa , le pediamos que haga "algo" -> una peticion , y que segun la respuesta : si lo pudo hacer o no, realizar distintas acciones
           //por defecto -> peticion GET ,pero podemos cambiar su configuracion para utilizar las otras peticiones (POST,DELETE,etc..)
           await fetch("http://localhost:4000/pedirProducto")
                   .then((res)=>res.json())
                   .then((data)=>setDatos(data))
                   .catch((err)=> console.log(err))
-        
-      }
+          }
     
       useEffect(()=>{
-          traerInfo()
+          mostrarInfo()
       
-          setTimeout(()=>{console.log(datos)},5000)//ejecutar una funcion luego de un cierto tiempo(seg)
+          setTimeout(()=>{console.log(datos)},4000)//ejecutar una funcion luego de un cierto tiempo(seg)
           
-      },[])
+      },[]);
     
     return( 
       <Fragment>

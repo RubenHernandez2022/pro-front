@@ -4,7 +4,7 @@ import "./ListItemHome.css"
 export default function ListItemHome ({dato,infoPath}){
     
     return(
-        <Link to={infoPath}><li className="btn boton-home m-2 p-3">{dato}</li></Link>
+        <li className="btn boton-home m-2 p-3"><Link className="text-decoration-none boton-home m-2 p-3"to={infoPath}>{dato}</Link></li>
         )
     
 }
