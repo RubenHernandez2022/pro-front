@@ -7,8 +7,12 @@ export default function FormuAgregar(){
             <div class=" color-contacto d-flex flex-column justify-content-center align-items-center m-auto mt-5 w-75 h-75">
                 <h2>Producto nuevo</h2>
                 
-                <form className="row g-5 p-5" action="http://localhost:4000/agregarProducto" method="POST">
+                <form className="row g-5 p-5" action="http://localhost:4000/agregarProducto" enctype="multipart/form-data" method="POST">
                     <div className="col-12"> 
+                        <label formHTML="imagen" className="form-label">imagen</label>
+                        <input type="file" name="imagen" className="form-control" id="imagen"/> 
+                    </div> 
+                    <div className="col-12">
                         <label formHTML="tipoProducto" className="form-label">
                            Tipo de Producto  :
                            <select name="tipoProducto" id="tipoProducto" required>

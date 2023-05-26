@@ -1,12 +1,14 @@
 import Navegation from "../Navegation/Navegation"; 
-
 import "./Administrador.css";
 //import {useState} from"react";
 import{Fragment} from "react"
 import ListItemHome from "../ListItem/ListItemHome";
 
+
+
+
 export default function Administrador(){
-  
+   
       return(
       <Fragment>
         <Navegation/>
@@ -16,11 +18,12 @@ export default function Administrador(){
                 <nav>
                    <ul className="d-flex justify-content-between">
                       <ListItemHome dato="AGREGAR" infoPath="/FormuAgregar"/>
-                      <ListItemHome dato="ELIMINAR" infoPath="/ELIMINAR"/>
+                      <ListItemHome dato="ELIMINAR" infoPath="/Eliminar"/>
                       
+       
                    </ul>
                 </nav>
-        </div>  
+         </div>  
         
       </Fragment> 
     ) 
