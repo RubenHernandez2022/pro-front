@@ -20,8 +20,7 @@ export default function FormuAgregar(){
                              <option value="Herramientas">Herramientas</option>
                              <option value="Repuestos">Repuestos</option>
                            </select>        
-                        </label>
-                        {/* <input type="text" name="tipoProducto" className="form-control" id="tipoProducto"/> */}
+                        </label>  
                     </div> 
                     <div className="col-12">
                        <label formHTML="producto" className="form-label">Producto</label>

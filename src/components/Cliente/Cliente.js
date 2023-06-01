@@ -8,7 +8,7 @@ import {useEffect,useState} from "react";
 import{Fragment} from "react"
 
 export default function Cliente () {
-    
+  // let [admin,setAdmin]=useState();
   let [datos,setDatos]=useState([]);
   const mostrarInfo=async()=>{
           // metodo que es una promesa , le pediamos que haga "algo" -> una peticion , y que segun la respuesta : si lo pudo hacer o no, realizar distintas acciones
