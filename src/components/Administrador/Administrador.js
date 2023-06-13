@@ -15,7 +15,7 @@ export default function Administrador(){
             <nav>
                <ul className="d-flex justify-content-between">
                   <ListItemHome dato="AGREGAR" infoPath="/FormuAgregar"/>
-                  <ListItemHome dato="ELIMINAR" infoPath="/Eliminar"/>
+                  <ListItemHome dato="EDITAR--ELIMINAR" infoPath="/Eliminar"/>
                </ul>
             </nav>
          </div>  

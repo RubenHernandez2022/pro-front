@@ -13,6 +13,7 @@ export default function Router(){
                   <Route path="/Administrador" element={<Administrador/>}/>
                   <Route path="/formuAgregar" element={<FormuAgregar/>}/>
                   <Route path="/Eliminar" element={<Eliminar/>}/>
+                  {/* <Route path="/Editar" element={<Editar/>}/> */}
                 </Routes>
             </BrowserRouter>
 

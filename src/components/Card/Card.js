@@ -6,21 +6,27 @@ export default function Card({info}) {
   
   const eliminarProducto=async()=>{
     setOcultar(false)
-      await  fetch("http://localhost:4000/eliminarProducto", {
-       method: "DELETE",
-       headers: {
-           'Content-Type': 'application/json'
-         },
-       body: JSON.stringify({ "tipoProducto": info.tipoProducto,"Producto":info.Producto,"Marca":info.Marca})
-     })
-       .then(respuesta => respuesta.json())
-       .then(data => console.log(data))
-       .catch(error => console.log("HAY UN ERROR!!" +error))
+    await  fetch("http://localhost:4000/eliminarProducto", {
+      method: "DELETE",
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ "tipoProducto": info.tipoProducto,"producto":info.producto,"marca":info.marca})
+    })
+      .then(respuesta => respuesta.json())
+      .then(data => console.log(data))
+      .catch(error => console.log("HAY UN ERROR!!" +error))
   
   }
 
   const [Ocultar,setOcultar]=useState(true);
   
+
+  const guardarData =()=>{
+    let data=JSON.stringify(info)// porque localStorage guarda tipo string
+    localStorage.setItem("ArticuloGuardado",data)
+  }
+
   return(
     <Fragment>
       {Ocultar ===true?
@@ -39,10 +45,11 @@ export default function Card({info}) {
                     <li className="color-name">Tipo Producto</li>
                     <li className="lista-info ">{info.tipoProducto}</li>
                     <li className="color-name">Producto</li>
-                    <li className="lista-info ">{info.Producto}</li>
+                    <li className="lista-info ">{info.producto}</li>
                     <li className="color-name">Marca</li>
-                    <li className="lista-info">{info.Marca}</li>
+                    <li className="lista-info">{info.marca}</li>
                     <Link to="/Eliminar" activeClassName="active"><button className="btn btn-danger btn-eliminar" onClick={()=>eliminarProducto()}>Eliminar</button></Link>
+                    <Link to="/FormuAgregar" activeClassName="active"><button className="btn btn-danger btn-eliminar" onClick={()=>guardarData()}>Editar</button></Link>
                   </ul>
               </div>
              
