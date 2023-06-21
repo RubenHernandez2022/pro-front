@@ -7,7 +7,7 @@ import{Fragment} from "react"
 import {useEffect,useState} from "react";
 import SectionCards from "../SectionCards/SectionCards";
 import Navegation from "../Navegation/Navegation";
-
+import {Link} from "react-router-dom";
 export default function Eliminar () {
     
     let [datos,setDatos]=useState([]);
@@ -30,10 +30,13 @@ export default function Eliminar () {
 
  return(
    <Fragment>
-      <Navegation/>
+      {/* <Navegation/> */}
+      
        <div className="card bg-secondary text-white" >
           <div className="card-body">
-            <SectionCards datos={datos}/>
+             <Link to="/Administrador" activeClassName="active"><button className="btn btn-success btn-eliminar mt-3 mb-5 position-absolute  top-0 end-50" >VOLVER</button></Link>
+             <SectionCards datos={datos}/>
+            
           </div>
         </div>
     </Fragment>

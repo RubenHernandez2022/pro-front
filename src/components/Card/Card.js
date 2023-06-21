@@ -50,6 +50,7 @@ export default function Card({info}) {
                     <li className="lista-info">{info.marca}</li>
                     <Link to="/FormuAgregar" activeClassName="active"><button className="btn btn-primary btn-eliminar me-5" onClick={()=>guardarData()}>Editar</button></Link>
                     <Link to="/Eliminar" activeClassName="active"><button className="btn btn-danger btn-eliminar" onClick={()=>eliminarProducto()}>Eliminar</button></Link>
+                    
                   </ul>
               </div>
              
