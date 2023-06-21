@@ -11,7 +11,7 @@ export default function Navegation () {
                <ul  className="d-flex flex-row">
                   <li className="border border-0 p-3 subra" ><NavLink style={{color:'inherit',textDecoration:'inherit'}} to="/">Home</NavLink></li>
                   <li className="border border-0 p-3 subra" ><NavLink style={{color:'inherit',textDecoration:'inherit'}} to="/Cliente" activeClassName="active">Cliente</NavLink></li>
-                  <li className="border border-0 p-3 subra"><NavLink style={{color:'inherit',textDecoration:'inherit'}} to="/Administrador" activeClassName="active">Administrador</NavLink></li>
+                  <li className="border border-0 p-3 subra"><NavLink style={{color:'inherit',textDecoration:'inherit'}} to="/Login" activeClassName="active">Administrador</NavLink></li>
                </ul>
             </div>
         </nav>

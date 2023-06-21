@@ -1,14 +1,14 @@
 import {Fragment, useState,useEffect} from 'react';
-//import Administrador from '../Administrador/Administrador';
 import {useNavigate} from "react-router-dom"
+
 export default function FormuAgregar(){
     const navigate=useNavigate();
     const [metodo,setMetodo]=useState('');
     const[form,setForm]=useState({
-            imagen:'',
-            tipoProducto:'',
-            Producto:'',
-            Marca:''
+        imagen:'',
+        tipoProducto:'',
+        Producto:'',
+        Marca:''
             
     });
     
@@ -86,9 +86,8 @@ export default function FormuAgregar(){
     
     return(
         <Fragment> 
-       <div className="container-fluid recuadro-contacto">
-            
-            <div className=" color-contacto d-flex flex-column justify-content-center align-items-center m-auto mt-5 w-75 h-75">
+            <div className="container-fluid recuadro-contacto">
+             <div className=" color-contacto d-flex flex-column justify-content-center align-items-center m-auto mt-5 w-75 h-75">
                 <h2>Producto nuevo</h2>
                 
                 <form className="row g-5 p-5" onSubmit={(event)=>{CargarArticulo(event)}}>
@@ -118,8 +117,8 @@ export default function FormuAgregar(){
                        <button type="submit" className="btn boton-contacto">Enviar</button>
                     </div>
                 </form>
+              </div> 
             </div> 
-        </div> 
         </Fragment>
     );
     }

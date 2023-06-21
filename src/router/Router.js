@@ -4,16 +4,19 @@ import Cliente from "../components/Cliente/Cliente";
 import Administrador from "../components/Administrador/Administrador";
 import FormuAgregar from "../components/FormuAgregar/FormuAgregar";
 import Eliminar from "../components/FormuAgregar/Eliminar";
+import Login from "../components/Login/Login";
+
 
 export default function Router(){
     return(<BrowserRouter>
                 <Routes>
                   <Route path="/" element={<Home/>}/>
                   <Route path="/Cliente" element={<Cliente/>}/>
-                  <Route path="/Administrador" element={<Administrador/>}/>
+                  <Route path="/Login" element={<Login/>}/>
+                  <Route path="/Administrador" element={<Administrador/>}/> 
                   <Route path="/formuAgregar" element={<FormuAgregar/>}/>
                   <Route path="/Eliminar" element={<Eliminar/>}/>
-                  {/* <Route path="/Editar" element={<Editar/>}/> */}
+                  
                 </Routes>
             </BrowserRouter>
 

@@ -11,7 +11,7 @@ export default function Home() {
                 <nav>
                    <ul className="d-flex justify-content-between">
                       <ListItemHome dato="CLIENTE" infoPath="/Cliente"/>
-                      <ListItemHome dato="ADMINISTRADOR" infoPath="/Administrador"/>
+                      <ListItemHome dato="ADMINISTRADOR" infoPath="/Login"/>
                       
                    </ul>
                 </nav>
