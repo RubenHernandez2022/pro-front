@@ -1,13 +1,8 @@
-//import Filters from "../Filters/Filter";
-//import SectionCards from "../SectionCards/SectionCards";
-//import "./Cliente.css";
-//import Card from "../Card/Card";
-//import Cliente from "../Cliente/Cliente"
 import{Fragment} from "react"
 import {useEffect,useState} from "react";
 import SectionCards from "../SectionCards/SectionCards";
-import Navegation from "../Navegation/Navegation";
 import {Link} from "react-router-dom";
+
 export default function Eliminar () {
     
     let [datos,setDatos]=useState([]);
@@ -18,29 +13,24 @@ export default function Eliminar () {
                     .then((res)=>res.json())
                     .then((data)=>setDatos(data))
                     .catch((err)=> console.log(err))
-            }
+    }
       
-        useEffect(()=>{
-            mostrarInfo()
-        
-            setTimeout(()=>{console.log(datos)},4000)//ejecutar una funcion luego de un cierto tiempo(seg)
+      useEffect(()=>{
+          mostrarInfo()
+          setTimeout(()=>{console.log(datos)},4000)//ejecutar una funcion luego de un cierto tiempo(seg)
             
-        },[]);
+      },[]);
 
 
- return(
+  return(
    <Fragment>
-      {/* <Navegation/> */}
-      
-       <div className="card bg-secondary text-white" >
-          <div className="card-body">
-             <Link to="/Administrador" activeClassName="active"><button className="btn btn-success btn-eliminar mt-3 mb-5 position-absolute  top-0 end-50" >VOLVER</button></Link>
-             <SectionCards datos={datos}/>
-            
-          </div>
+     <div className="card bg-secondary text-white" >
+        <div className="card-body">
+          <Link to="/Administrador" activeClassName="active"><button className="btn btn-success btn-eliminar mt-3 mb-5 position-absolute  top-0 end-50" >VOLVER</button></Link>
+          <SectionCards datos={datos}/>
         </div>
+      </div>
     </Fragment>
-
- );
+  );
     
 };

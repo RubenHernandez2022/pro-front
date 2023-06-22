@@ -37,7 +37,7 @@ export default function Card({info}) {
               {/* <button className="cierre-menu d-flex align-self-end me-5 mt-5" onClick={ocultarInfo}>X</button> */}
               <div >
                   <div >
-                      <img  className="imagen w-100 p-2"  src={info.imagen} alt={info.Imagen}/> 
+                    <img  className="imagen w-100 p-2"  src={info.imagen} alt={info.Imagen}/> 
                   </div>
                   <h2 className="d-flex justify-content-center mt-2 color-name"><u>Artículo</u></h2>
                   
@@ -48,12 +48,11 @@ export default function Card({info}) {
                     <li className="lista-info ">{info.producto}</li>
                     <li className="color-name">Marca</li>
                     <li className="lista-info">{info.marca}</li>
-                    <Link to="/FormuAgregar" activeClassName="active"><button className="btn btn-primary btn-eliminar me-5" onClick={()=>guardarData()}>Editar</button></Link>
-                    <Link to="/Eliminar" activeClassName="active"><button className="btn btn-danger btn-eliminar" onClick={()=>eliminarProducto()}>Eliminar</button></Link>
+                    <Link to="/FormuAgregar" activeClassName="active"><button className="btn btn-primary btn-eliminar me-4" onClick={()=>guardarData()}>Editar</button></Link>
+                    <Link to="/Eliminar" activeClassName="active"><button className="btn btn-danger btn-eliminar ms-5" onClick={()=>eliminarProducto()}>Eliminar</button></Link>
                     
                   </ul>
               </div>
-             
           </div>:""
       }
     </Fragment>  
