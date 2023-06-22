@@ -30,20 +30,8 @@ export default function Cliente () {
       <Fragment>
         <Navegation/>
         <main className="container-fluid mt-5">
-            {/* <section className="sec-filtro py-5 "> */}
-               {/* <h2>Filtros</h2> 
-              <div className="row card text-white bg-secondary m-3 align-items-center w-50 d-flex justify-content-between flex-wrap">
-                 <Filters  nombreFiltro="Tipo Producto" datoFiltro="Tipo producto" muestraValor={mostrarValor}/>
-                 <Filters  nombreFiltro="Productos" datoFiltro="Productos" muestraValor={mostrarValor}/>
-                 <Filters  nombreFiltro="Marca" datoFiltro="Marca" muestraValor={mostrarValor}/> 
-                 {datos.map((dato)=>{return <Card key={datos.indexOf(dato)}info={dato}/>
-              })}
-              </div> */}
-              <SectionCards datos={datos}/>
-            {/* </section>
-              */}
-             
-             
+           
+          <SectionCards datos={datos}/>
         </main>
       </Fragment>
     )
