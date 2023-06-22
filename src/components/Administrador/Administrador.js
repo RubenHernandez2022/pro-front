@@ -1,4 +1,3 @@
-//import "./Administrador.css";
 import Navegation from "../Navegation/Navegation";
 import{Fragment} from "react"
 import ListItemHome from "../ListItem/ListItemHome";
